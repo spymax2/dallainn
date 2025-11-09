@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="transit.css">
+    <link rel="icon" href="https://www.shutterstock.com/image-illustration/green-beans-porridge-logo-you-260nw-2088553618.jpg" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title > DALLAS-INN PORRIDGE CENTER Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: #111;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: transparent;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #12c548dc;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f5d76e;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://tasteofsouthsudan.com/wp-content/uploads/2016/09/FInger-millet-porridge.jpg') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #a682d4;
+    }
+
+    .btn {
+      background: #06db82;
+      color: #111;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #04ca67;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      animation: fadeSlide 1.5s ease-in-out;
+    }
+
+    section h2 {
+      color: #f5d76e;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      color: #ddd;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .about-preview {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+
+    .photo-split {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background: #222;
+      padding: 60px 0;
+      transition: transform 1s ease;
+    }
+
+    .photo-split img {
+      width: 45%;
+      border-radius: 12px;
+      transition: transform 0.8s ease-in-out;
+    }
+
+    .photo-split img:hover {
+      transform: rotateY(15deg) scale(1.03);
+    }
+
+    /* Best Sellers Section */
+    .best-sellers {
+      background: linear-gradient(to right, #000000aa, #111111cc);
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .item {
+      width: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .testimonials {
+      background: rgba(0, 0, 0, 0.7);
+      font-style: italic;
+    }
+
+    .cta {
+      background: url('images/porridge-bg2.jpg') no-repeat center/cover;
+      padding: 100px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeSlide {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>WELCOME TO DALLAS-INN PORRIDGE CENTER</h2>
+    <p>Pure taste. Pure energy. Freshly made and delivered with love.</p>
+    <a href="service.html" class="btn">Order Now</a>
+  </section>
+
+  <!-- About Sneak Peek -->
+  <section class="about-preview">
+    <h2>Why Porridge Center?</h2>
+    <p>We blend tradition and health in every cup — using local grains, pure ingredients, and care. Whether you're starting your day or recharging after work, our porridge fuels both heart and body.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <!-- Two Photo Split Section -->
+  <section class="photo-split">
+    <img src="https://img.taste.com.au/ECWfntlW/w1200-h630-cfill/taste/2017/05/basicporridge_1980x1320-126888-1.jpg" alt="Hot porridge serving">
+    <img src="https://scottishscran.com/wp-content/uploads/2023/06/Porridge-1200-5-735x490.jpg" alt="Fresh porridge ingredients">
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="best-sellers">
+    <h2>Our Best Sellers</h2>
+    <div class="menu">
+      <div class="item">
+        <img src="https://mayuris-jikoni.com/wp-content/uploads/2018/04/IMG_8748.jpg" alt="Millet Porridge">
+        <p><strong>Millet Porridge</strong><br>Rich & creamy, perfect energy boost.</p>
+      </div>
+      <div class="item">
+        <img src="https://www.natashashome.com/wp-content/uploads/2025/07/Sorghum-porridge-hero.jpg" alt="Sorghum Porridge">
+        <p><strong>Sorghum Porridge</strong><br>Nutty flavor, loved by everyone.</p>
+      </div>
+      <div class="item">
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/05/oats-porridge-recipe-quick.jpg" alt="Oats Porridge">
+        <p><strong>Oats Porridge</strong><br>Modern twist, super smooth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <blockquote>“Best porridge I’ve ever had. Tastes like home!” — Mary N.</blockquote>
+    <blockquote>“Healthy, hot, and affordable. My morning ritual!” — James K.</blockquote>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Taste Bliss?</h2>
+    <p>We’re just a call or click away — fresh porridge delivered with care.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </section>
+
+   <footer>
+    <p>Follow us | Dallas-In Porridge Center</p>
+    <p>© 2025 Porridge Center | Nourishing the Community</p>
+  </footer>
+
+</body>
+</html>

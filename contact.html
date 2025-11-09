@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="transit.css">
+    <link rel="icon" href="https://www.shutterstock.com/image-illustration/green-beans-porridge-logo-you-260nw-2088553618.jpg" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DALLAS-INN PORRIDGE CENTER |Contact Us </title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+      margin: 0;
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0;
+      background: transparent;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #6b4f27;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    
+     nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: transparent;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #12c548dc;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 900;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f5d76e;
+    }
+
+    .opening-hours {
+      text-align: center;
+      padding: 60px 10%;
+    }
+
+    .opening-hours h2 {
+      color: #d4a14e;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .opening-hours table {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .opening-hours th,
+    .opening-hours td {
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .opening-hours th {
+      background-color: #d4a14e;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .opening-hours td {
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .opening-hours .closed {
+      background-color: #fff3e0;
+      color: #c62828;
+      font-weight: bold;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 50px 10%;
+    }
+
+    .contact-item {
+      background-color: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 260px;
+      transition: 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-item img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-item h2 {
+      margin-bottom: 10px;
+      color: #6b4f27;
+    }
+
+    .contact-item a {
+      text-decoration: none;
+      color: #6b4f27;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background-color:teal;
+      color: #fff;
+      padding: 20px 10px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      .contact {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+     <!-- Nav Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section class="opening-hours">
+      <h2>Dallas-In Porridge Center Hours</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Opening Time</th>
+          <th>Closing Time</th>
+        </tr>
+        <tr>
+          <td>Monday - Friday</td>
+          <td>8:00 AM</td>
+          <td>4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM</td>
+          <td>2:00 PM</td>
+        </tr>
+        <tr class="closed">
+          <td>Sunday</td>
+          <td colspan="2">Closed</td>
+        </tr>
+      </table>
+    </section>
+    <h1>Contact Us</h1>
+
+    <section class="contact">
+      <div class="contact-item">
+        <a href="https://wa.me/254743346969" target="_blank">
+          <img src="watsaap.jpeg" alt="WhatsApp">
+        </a>
+        <h2>WhatsApp</h2>
+        <a href="https://wa.me/254743346969" target="_blank">Chat with us</a>
+      </div>
+
+      <div class="contact-item">
+        
+        
+        <a href="mailto:cleandemon5@gmail.com" target="_blank">
+        <img src="email.png" alt="email">
+      </a>
+        <h2>Email US</h2>
+      </div>
+
+      <div class="contact-item">
+        <a href="tel:+254743346969">
+          <img src="phone.jpg" alt="Phone">
+        </a>
+        <h2>Phone</h2>
+        <a href="tel:+254743346969">Call Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Follow us
+        <box-icon type='logo' name='instagram'></box-icon>
+        <box-icon type='logo' name='twitter'></box-icon>
+        <box-icon type='logo' name='skype'></box-icon>
+         | Dallas-In Porridge Center</p>
+    <p>© 2025 Porridge Center | Nourishing the Community</p>
+  </footer>
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>

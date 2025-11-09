@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="transit.css">
+    <link rel="icon" href="https://www.shutterstock.com/image-illustration/green-beans-porridge-logo-you-260nw-2088553618.jpg" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DALLAS-INN PORRIDGE CENTER | Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+      background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: transparent;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #6b4f27;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #6b4f27;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #d35400;
+    }
+
+    header {
+      padding-top: 120px;
+      text-align: center;
+      font-size: smaller;
+      
+    }
+
+    header h2 {
+      color: #6b4f27;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #5c4033;
+      font-size: 1.1em;
+    }
+
+    /* Services List */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin: 50px auto;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(241, 239, 239, 0.9);
+      border-radius: 14px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(10, 10, 10, 0.797);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #6b4f27;
+    }
+
+    .card p {
+      color: #5c4033;
+      font-size: 0.95em;
+    }
+
+    /* Order Form */
+    .order-form {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 14px;
+      margin: 80px auto;
+      padding: 40px 25px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .order-form h2 {
+      color: #6b4f27;
+      margin-bottom: 15px;
+    }
+
+    .order-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+      padding: 12px;
+      border: 1px solid #c2a676;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .order-form button {
+      background: #d35400;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 30px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .order-form button:hover {
+      background: #e67e22;
+    }
+
+    footer {
+      background: #fff3e0;
+      padding: 20px;
+      text-align: center;
+      color: #6b4f27;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1></h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h2>Our Services At DALLAS-INN Porridge</h2>
+    <p>Choose your favorite porridge flavor and we’ll make it fresh for you.</p>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="card">
+      <img src="https://tasteofsouthsudan.com/wp-content/uploads/2016/09/FInger-millet-porridge.jpg" alt="Millet Porridge">
+      <h3>Millet Porridge</h3>
+      <p>Creamy, energy-packed and full of nutrients. A fan favorite.</p>
+    </div>
+    <div class="card">
+      <img src="https://wholefoodsoulfoodkitchen.com/wp-content/uploads/2023/04/how-to-make-sorghum-porridge-5.jpg" alt="Sorghum Porridge">
+      <h3>Sorghum Porridge</h3>
+      <p>Rich, nutty flavor made from traditional grains for lasting energy.</p>
+    </div>
+    <div class="card">
+      <img src="https://gracefoods.com/images/cropped-Oats.jpg" alt="Oats Porridge">
+      <h3>Oats Porridge</h3>
+      <p>Smooth and modern — perfect for a balanced breakfast.</p>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="order-form">
+    <h2>Place Your Order</h2>
+    <p>Fill in your details below and we’ll reach out for confirmation.</p>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="location" placeholder="Delivery Location" required>
+      <select id="flavor" required>
+        <option value="">Choose Flavor</option>
+        <option value="Millet">Millet Porridge</option>
+        <option value="Sorghum">Sorghum Porridge</option>
+        <option value="Oats">Oats Porridge</option>
+      </select>
+      <textarea id="notes" rows="3" placeholder="Additional notes (optional)"></textarea>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Porridge Center. All Rights Reserved.
+  </footer>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert("ONYII ENDA UOGE!!! 😎");
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>

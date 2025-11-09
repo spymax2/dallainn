@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="transit.css">
+    <link rel="icon" href="https://www.shutterstock.com/image-illustration/green-beans-porridge-logo-you-260nw-2088553618.jpg" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DALLAS-INN PORRIDGE CENTER |About Us </title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>DALLAS-INN PORRIDGE CENTER</h1>
+            
+        </div>
+      <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="story" class="dark-section"> 
+            <h2 id="typewriter-story"></h2>
+            <p>
+                Founded in 2024, The Porridge Center started with a simple mission: to redefine breakfast. We believe porridge shouldn't be bland or boring. It should be a hearty, wholesome, and delicious experience that powers your day. We use only locally-sourced, organic grains and fresh ingredients to craft every bowl.
+            </p>
+            <p>
+                From humble beginnings in a small market stall, we've grown into a beloved community spot known for our unique flavors and warm atmosphere.
+            </p>
+        </section>
+
+        <section id="philosophy">
+            <h2 id="typewriter-philosophy"></h2>
+            <div class="philosophy-points">
+                <div class="point">
+                    <h3>🌱 Quality Ingredients</h3>
+                    <p>We source the finest oats, millet, and ingredients from local farmers. Freshness guaranteed.</p>
+                </div>
+                <div class="point">
+                    <h3>🥣 Creative Recipes</h3>
+                    <p>Our chefs constantly innovate new recipes, offering flavors from classic apple cinnamon to exotic coconut mango.</p>
+                </div>
+                <div class="point">
+                    <h3>🧡 Community First</h3>
+                    <p>We believe in building a healthy community, one bowl of nutritious porridge at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="offerings">
+            <h2 id="typewriter-offerings"></h2>
+            <ul>
+                <li>**Classic Oat Porridge:** Creamy and comforting, with your choice of toppings.</li>
+                <li>**Ancient Grain Bowl:** A mix of quinoa, amaranth, and millet for a protein boost.</li>
+                <li>**Savory Options:** Explore our unique cheese and herb porridge.</li>
+                <li>**Seasonal Specials:** Fresh fruit and spice combinations that change monthly.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Porridge Center | Nourishing the Community</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for the Typewriter Effect -->
+    <script>
+        function applyTypewriter(elementId, text, speed) {
+            const element = document.getElementById(elementId);
+            let i = 0;
+            element.innerHTML = ''; // Clear existing text
+
+            function typeWriter() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+
+            typeWriter();
+        }
+
+        // Apply effects sequentially for a better visual flow
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Wait a moment before starting the first effect
+            setTimeout(() => {
+                applyTypewriter("typewriter-story", "Our Story", 70);
+            }, 500);
+
+            // Wait until the first one is likely done (adjust timing as needed)
+            setTimeout(() => {
+                applyTypewriter("typewriter-philosophy", 'Our Philosophy: "Wholesome Goodness"', 70);
+            }, 2000); 
+
+            // Wait until the second one is likely done
+            setTimeout(() => {
+                applyTypewriter("typewriter-offerings", "What We Offer", 70);
+            }, 4500); 
+        });
+    </script>
+
+</body>
+</html>

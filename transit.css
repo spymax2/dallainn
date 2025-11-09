@@ -1,0 +1,34 @@
+@view-transition {
+  navigation: auto;
+}
+
+
+@keyframes slide-out-left {
+  to { 
+    transform: translateX(-100%); 
+  }
+}
+
+@keyframes slide-in-right {
+  from { 
+    transform: translateX(100%); 
+  }
+}
+
+::view-transition-group(root) {
+  animation-duration: 0.5s; 
+  animation-timing-function: ease-in-out; 
+}
+
+::view-transition-old(root) {
+  animation-name: slide-out-left;
+  animation-duration: inherit; 
+  animation-fill-mode: forwards; 
+}
+
+::view-transition-new(root) {
+
+  animation-name: slide-in-right;
+  animation-duration: inherit; 
+  animation-fill-mode: forwards; 
+}
